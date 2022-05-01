@@ -88,6 +88,11 @@ p {
   padding-left: 20px;
 }
 
+.center {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
 .twoRows{
   grid-row: span 2;
 }
