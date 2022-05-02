@@ -152,14 +152,12 @@
         <img width="1300px" src="./img/pump.svg" alt="insulin pump illustration" />
       </div>
     </div>
-    <div id="overlay" class="overlay d-none"></div>
+    <div id="overlay" class="d-none"></div>
     <script>
       window.onbeforeunload = () => {
+        document.getElementById("overlay").classList.add("overlay");
         document.getElementById("overlay").classList.remove("d-none");
         window.scrollTo(0, 0);
-      }
-      window.onload = () => {
-        document.getElementById("overlay").classList.add("d-none");
       }
     </script>
   </body>
