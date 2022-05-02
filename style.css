@@ -9,15 +9,18 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.container > h1:first-child {
+.grid > h1:first-child {
   animation: fadeIn 3s;
 }
 
-.container > div:not(:first-child) {
+.grid > :not(:first-child) {
   animation: delayFadeIn 4s;
 }
 
@@ -38,6 +41,10 @@ h1 {
 
 h2 {
  font-size: 2.5em;
+}
+
+.title {
+  font-size: 4.5rem !important;
 }
 
 p {
@@ -65,6 +72,10 @@ p {
   padding-top: 40px;
 }
 
+.newSection {
+  padding-top: 150px;
+}
+
 .subHeading {
   font-family: 'DM Serif Display', serif;
   font-weight: 300;
@@ -73,7 +84,7 @@ p {
 
 .fullRow {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 5;
 }
 
 .left {
@@ -95,4 +106,82 @@ p {
 
 .twoRows{
   grid-row: span 2;
+}
+
+.title {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.pump {
+  position: absolute;
+  top: 3250px;
+  max-width: 1400px;
+  z-index: -100;
+}
+
+.right-far {
+  padding-left: 120px !important;
+}
+
+.creating-section {
+  padding-top: 200px;
+}
+
+.early-patient {
+  padding-top: 205px;
+}
+
+.paradigm {
+  padding-top: 280px;
+  padding-left: 120px !important;
+}
+
+.minimed-g {
+  padding-right: 80px !important;
+}
+
+.minimed-p {
+  padding-top: 200px;
+}
+
+.tandem-p {
+  padding-top: 250px;
+}
+
+.tandem-img {
+  padding-top: 320px;
+  padding-left: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bottom-link {
+  padding-top: 220px;
+}
+
+.bottom-link a {
+  text-decoration: none;
+  color: #FA6765 !important;
+}
+
+.bottom-link a:hover {
+  color: #2BAE66 !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 14000px;
+  background-color: #121212;
 }
