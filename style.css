@@ -20,6 +20,10 @@ body {
   animation: fadeIn 3s;
 }
 
+.early {
+  animation: fadeIn 3s;
+}
+
 .delayed {
   animation: delayFadeIn 4s;
 }
@@ -221,4 +225,48 @@ p {
 .underline-h:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.trigger {
+  width: 500px;
+  height: 6000px;
+  position: absolute;
+  top: 3000px;
+}
+
+.resources a {
+  color: #f0f0f0 !important;
+  text-decoration: underline;
+  font-size: larger;
+  line-height: 1.6;
+  transition: all 2s ease;
+}
+
+.resources a:hover {
+  text-decoration-color: #2BAE66 !important;
+  text-decoration-thickness: 2px;
+}
+
+.back {
+  position: absolute;
+  top: 130px;
+  color: #FA6765 !important;
+  transition: all 0.5s ease;
+}
+
+.back:hover path{
+  stroke: #f0f0f0 !important;
+}
+
+.endtubecontainer {
+  position: relative;
+  width: 0px;
+  height: 0px;
+}
+
+.endtube {
+  position: absolute;
+  top: -900px;
+  left: 800px;
+  max-height: 600px;
 }
