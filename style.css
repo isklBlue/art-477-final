@@ -122,6 +122,22 @@ p {
   z-index: -100;
 }
 
+.pumpbody {
+  position: absolute;
+  top: 242px;
+  left: 99px;
+  max-width: 240px;
+  z-index: -100;
+}
+
+.tube {
+  position: absolute;
+  top: 3250px;
+  max-width: 1300px;
+  max-height: 6181.5px;
+  z-index: -100;
+}
+
 .right-far {
   padding-left: 120px !important;
 }
@@ -169,10 +185,6 @@ p {
   color: #FA6765 !important;
 }
 
-.bottom-link a:hover {
-  color: #2BAE66 !important;
-}
-
 .d-none {
   display: none !important;
 }
@@ -184,4 +196,29 @@ p {
   width: 100vw;
   height: 14000px;
   background-color: #121212;
+}
+
+.underline-h {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.underline-h:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 10px;
+  top: 100%;
+  left: 0;
+  border-radius: 0px 10px 2px 0px;
+  background-color: #2BAE66;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+.underline-h:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
